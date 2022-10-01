@@ -120,9 +120,10 @@ body {
 
 /* OPTIONS STYLING */
 .options {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+  width: 60vw;
 }
 
 .option {
@@ -158,4 +159,28 @@ body {
   padding: 1rem 2rem;
   justify-self: center;
   align-self: center;
+}
+
+@media screen and (max-width: 37.5em) {
+  html {
+    font-size: 55%;
+  }
+
+  .Question {
+    padding-bottom: 0.5rem;
+  }
+
+  .Question .title {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .options {
+    margin-inline: auto;
+  }
+
+  .score {
+    margin-top: 1rem;
+    flex-direction: column;
+  }
 }
