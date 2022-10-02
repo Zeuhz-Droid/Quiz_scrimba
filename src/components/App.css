@@ -166,8 +166,15 @@ body {
     font-size: 55%;
   }
 
+  .Questions {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
   .Question {
     padding-bottom: 0.5rem;
+    gap: 5rem;
   }
 
   .Question .title {
