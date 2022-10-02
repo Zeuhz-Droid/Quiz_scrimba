@@ -7,7 +7,7 @@ This is a question app, built using react.
 
   ##Site
 
-  [Hosted Site](https://zeuhz-droid.github.io/Quiz_scrimba/)
+  [Hosted Site](https://quiz-scrimba.vercel.app/)
 
 ##ACKNOWLEGMENTS
 
