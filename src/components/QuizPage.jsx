@@ -21,7 +21,7 @@ const QuizPage = () => {
   const getQuestions = async () => {
     const { data } = await openTrivia.get("", {
       params: {
-        amount: 5,
+        amount: 10,
         difficulty: "easy",
         type: "multiple",
       },
@@ -88,7 +88,9 @@ const QuizPage = () => {
       />
       <div className="score">
         <p className="score-msg">
-          {isSubmitted ? `You scored ${score ? score : 0}/5 answers` : ""}
+          {isSubmitted
+            ? `You scored ${score ? score : 0}/${questions.length} answers`
+            : ""}
         </p>
         <button
           className="btn btn-submit"
