@@ -19,9 +19,11 @@ const QuizPage = () => {
   };
 
   const getQuestions = async () => {
+    const range = Math.floor(Math.random() * 3) + 5;
+    console.log(range);
     const { data } = await openTrivia.get("", {
       params: {
-        amount: 10,
+        amount: range,
         difficulty: "easy",
         type: "multiple",
       },
