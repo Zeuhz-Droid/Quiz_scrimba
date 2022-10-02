@@ -1,9 +1,9 @@
     #Introductory
 
-This is a question app, built using react.
+This is a Quiz app, built with react.
 
-- It displays questions from different aspect of knowledge from various areas for users to answers
-- The result is shown after user submit along with the right answers.
+- It displays questions from different aspect of knowledge from various areas for users to answer,
+- The result is shown after user submits, along with the right answers marked in green, and the wrong answers in red.
 
   ##Site
 
