@@ -19,7 +19,7 @@ const QuizPage = () => {
   };
 
   const getQuestions = async () => {
-    const range = Math.floor(Math.random() * 3) + 5;
+    const range = Math.floor(Math.random() * 5) + 5;
     console.log(range);
     const { data } = await openTrivia.get("", {
       params: {
@@ -69,7 +69,7 @@ const QuizPage = () => {
   };
 
   const handleSubmit = () => {
-    setIsSubmitted(!isSubmitted);
+    setIsSubmitted(true);
     checkAnswers(answers, correctAnswers);
     setIsCompleted(true);
   };
